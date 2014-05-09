@@ -69,7 +69,7 @@ class Game:
     def start(self):
         print "Player 0, what tile would you like to play (X or O)?"
         playerZeroTile = raw_input()[0].upper()
-        while not playerZeroTile == 'X' and not playerZeroTile is 'O':
+        while not playerZeroTile == 'X' and not playerZeroTile == 'O':
             playerZeroTile = raw_input("Invalid input. Player 0, what tile would you like to play (X or O)? \n")[0].upper()
         self.playerZero = Player(playerZeroTile, 0)
         if playerZeroTile == 'X':
